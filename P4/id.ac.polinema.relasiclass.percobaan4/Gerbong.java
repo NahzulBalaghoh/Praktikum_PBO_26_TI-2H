@@ -15,6 +15,10 @@ public class Gerbong {
     }
 
     public void setPenumpang(Penumpang penumpang, int nomor) {
+        if (this.arrayKursi[nomor - 1].getPenumpang() != null) {
+            System.out.println("Kursi nomor " + nomor + " sudah terisi!");
+            return;
+        }
         this.arrayKursi[nomor - 1].setPenumpang(penumpang);
     }
 
