@@ -5,7 +5,7 @@ public class Tiket {
     protected String namaPenumpang;
     protected String asal;
     protected String tujuan;
-    protected int hargaDasar;
+    private int hargaDasar;
 
     public Tiket() {
     }
@@ -15,6 +15,14 @@ public class Tiket {
         this.namaPenumpang = namaPenumpang;
         this.asal = asal;
         this.tujuan = tujuan;
+        this.hargaDasar = hargaDasar;
+    }
+
+    public int getHargaDasar() {
+        return hargaDasar;
+    }
+
+    public void setHargaDasar(int hargaDasar) {
         this.hargaDasar = hargaDasar;
     }
 

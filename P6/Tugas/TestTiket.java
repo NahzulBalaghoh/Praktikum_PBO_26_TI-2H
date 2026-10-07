@@ -11,7 +11,7 @@ public class TestTiket {
         domestik.namaPenumpang = "Sinta";
         domestik.asal = "Surabaya";
         domestik.tujuan = "Denpasar";
-        domestik.hargaDasar = 900000;
+        domestik.setHargaDasar(900000);
         domestik.maskapai = "Garuda Indonesia";
         domestik.beratBagasi = 25;
         domestik.pajakBandara = 75000;

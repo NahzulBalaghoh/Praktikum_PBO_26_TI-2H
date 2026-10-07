@@ -20,6 +20,6 @@ public class TiketInternasional extends TiketPesawat {
         super.tampilPesawat();
         System.out.println("Nomor Paspor   = " + nomorPaspor);
         System.out.println("Asuransi       = " + asuransi);
-        System.out.println("Total Bayar    = " + (hargaDasar + hitungBiayaBagasi() + asuransi));
+        System.out.println("Total Bayar    = " + (getHargaDasar() + hitungBiayaBagasi() + asuransi));
     }
 }

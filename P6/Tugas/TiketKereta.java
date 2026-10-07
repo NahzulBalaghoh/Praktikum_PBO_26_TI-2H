@@ -19,6 +19,6 @@ public class TiketKereta extends Tiket {
         super.tampilTiket();
         System.out.println("Nomor Gerbong  = " + nomorGerbong);
         System.out.println("Nomor Kursi    = " + nomorKursi);
-        System.out.println("Total Bayar    = " + hargaDasar);
+        System.out.println("Total Bayar    = " + getHargaDasar());
     }
 }
