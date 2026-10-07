@@ -21,5 +21,11 @@ public class inheritance1 {
         S.lembur=500000;
         S.potongan=250000;
         S.tampilDataStaff();
+
+        staffTetap ST= new staffTetap("Budi", "Malang", "Lakilaki", 20, 2000000, 250000, 200000, "2A", 100000);
+        ST.tampilStaffTetap();
+        
+        staffHarian SH = new staffHarian("Indah", "Malang", "Perempuan", 27, 10000, 100000, 50000, 100);
+        SH.tampilStaffHarian();
     }    
 }
