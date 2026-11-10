@@ -23,8 +23,7 @@ public class Main {
         } catch (InsufficientBalanceException e) {
             System.out.println("Withdrawal failed: " + e.getMessage());
         }
-
-        Bank bank = new Bank();
+        Bank bank = new Bank(new InMemoryAccountRepository());
         bank.addAccount(acc1);
         bank.addAccount(acc2);
         bank.addAccount(savings);
