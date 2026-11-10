@@ -29,5 +29,6 @@ public class Main {
         bank.addAccount(savings);
         bank.processMonthEnd();
         bank.printHistory("A003");
+        System.out.println("Total assets: " + bank.totalAssets());
     }
 }

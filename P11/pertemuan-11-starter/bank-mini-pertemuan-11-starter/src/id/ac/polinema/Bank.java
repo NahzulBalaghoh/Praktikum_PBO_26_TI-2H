@@ -40,7 +40,7 @@ public class Bank {
             System.out.println(acc.getAccountNumber() + " monthly fee: " + acc.monthlyFee());
         }
     }
-    
+
     public void printHistory(String accountNumber) {
         Account acc = findAccount(accountNumber);
         if (acc == null) {
@@ -50,5 +50,13 @@ public class Bank {
         for (Transaction t : acc.getHistory()) {
             System.out.println(accountNumber + " " + t);
         }
+    }
+
+    public double totalAssets() {
+        double total = 0;
+        for (Account acc : repository.findAll()) {
+            total += acc.getBalance();
+        }
+        return total;
     }
 }
