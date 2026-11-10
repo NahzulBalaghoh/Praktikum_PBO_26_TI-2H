@@ -29,6 +29,6 @@ public class Main {
         bank.addAccount(acc2);
         bank.addAccount(savings);
         bank.processMonthEnd();
-        
+        bank.printHistory("A003");
     }
 }
